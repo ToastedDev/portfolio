@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://toastifydev.github.io",
-  base: "/portfolio",
+  site: "https://portfolio.toastify.tk",
   integrations: [tailwind()],
 });
