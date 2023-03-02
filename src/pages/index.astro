@@ -4,7 +4,7 @@ import Youtube from "../components/youtube.astro";
 import Source from "../components/source.astro";
 ---
 
-<html lang="en" class="bg-base-200">
+<html lang="en" class="bg-base-200 scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -41,8 +41,9 @@ import Source from "../components/source.astro";
             <li>
               <a class="font-medium rounded-lg" href="/">Home</a>
             </li>
-          </ul>
-          <ul class="menu menu-horizontal">
+            <li>
+              <a class="font-medium rounded-lg" href="#languages">Languages</a>
+            </li>
             <li>
               <a class="font-medium rounded-lg" href="#projects">Projects</a>
             </li>
@@ -69,10 +70,59 @@ import Source from "../components/source.astro";
               ToastedToast
             </h1>
             <p class="py-1 pr-2 sm:max-w-md sm:pr-0">
-              I'm a young developer that makes Discord bots and websites using
-              HTML, CSS, JS, and TS. I love taking existing ideas and making
-              them better.
+              I'm a young developer that makes Discord bots and websites. I love
+              taking existing ideas and making them better.
             </p>
+          </div>
+        </section>
+        <section id="languages" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
+          <h2 class="mb-4 text-xl font-bold">Languages</h2>
+          <div class="flex justify-center gap-4">
+            <a
+              href="https://en.wikipedia.org/wiki/HTML"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                width="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/CSS"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                width="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Tailwind_CSS"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                width="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/JavaScript"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                width="55"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/TypeScript"
+              class="transition-all ease-in-out hover:scale-[1.18]"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                width="55"
+              />
+            </a>
           </div>
         </section>
         <section id="projects" class="w-full px-4 pb-8 pt-2 sm:px-8 sm:pt-0">
