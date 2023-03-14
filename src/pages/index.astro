@@ -1,4 +1,5 @@
 ---
+import { Image } from "@astrojs/image/components";
 import Github from "../components/github.astro";
 import Source from "../components/source.astro";
 import Youtube from "../components/youtube.astro";
@@ -55,11 +56,12 @@ import Youtube from "../components/youtube.astro";
           class="align-center flex w-full flex-col justify-center px-4 pb-4 sm:flex-row sm:p-8"
         >
           <div class="mb-2 h-32 w-32 sm:mb-0 sm:h-40 sm:w-40">
-            <img
+            <Image
               src="/toastedtoast.jpg"
-              alt=""
-              width="160"
-              height="160"
+              alt="ToastedToast Logo"
+              format="jpg"
+              width={160}
+              height={160}
               class="rounded-full"
             />
           </div>
@@ -81,45 +83,55 @@ import Youtube from "../components/youtube.astro";
             <a
               href="https://en.wikipedia.org/wiki/HTML"
               class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="HTML"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
                 width="55"
               />
             </a>
             <a
               href="https://en.wikipedia.org/wiki/CSS"
               class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="CSS"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
                 width="55"
               />
             </a>
             <a
               href="https://en.wikipedia.org/wiki/Tailwind_CSS"
               class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="Tailwind CSS"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                alt="Tailwind CSS"
                 width="55"
               />
             </a>
             <a
               href="https://en.wikipedia.org/wiki/JavaScript"
               class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="JavaScript"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
                 width="55"
               />
             </a>
             <a
               href="https://en.wikipedia.org/wiki/TypeScript"
               class="transition-all ease-in-out hover:scale-[1.18]"
+              aria-label="TypeScript"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
                 width="55"
               />
             </a>
@@ -136,11 +148,15 @@ import Youtube from "../components/youtube.astro";
                 rel="noopener noreferrer"
                 class="card-body"
                 href="https://countify.cf"
-                ><h2 class="card-title font-bold text-3xl">
-                  <img
+              >
+                <h2 class="card-title font-bold text-3xl">
+                  <Image
                     src="https://countify.cf/public/logo.png"
-                    alt=""
-                    class="h-[40px] rounded-full"
+                    alt="Countify Logo"
+                    format="png"
+                    width={40}
+                    height={40}
+                    class="rounded-full"
                   /> Countify
                 </h2>
                 <p>The only counting bot you need.</p>
@@ -159,10 +175,13 @@ import Youtube from "../components/youtube.astro";
                 href="https://discord.com/api/oauth2/authorize?client_id=1077159995487035402&permissions=19456&scope=bot%20applications.commands"
                 ><h2 class="flex justify-between">
                   <div class="card-title font-bold text-3xl">
-                    <img
+                    <Image
                       src="/statistical.png"
-                      alt=""
-                      class="h-[40px] rounded-full"
+                      alt="Statistical Logo"
+                      format="png"
+                      width={40}
+                      height={40}
+                      class="rounded-full"
                     /> Statistical
                   </div>
                 </h2>
@@ -183,11 +202,15 @@ import Youtube from "../components/youtube.astro";
                 rel="noopener noreferrer"
                 class="card-body"
                 href="https://toastify.tk"
-                ><h2 class="card-title font-bold text-3xl">
-                  <img
+              >
+                <h2 class="card-title font-bold text-3xl">
+                  <Image
                     src="https://toastify.tk/toaster.png"
-                    alt=""
-                    class="h-[40px] rounded-full"
+                    alt="Toastify Logo"
+                    format="png"
+                    width={40}
+                    height={40}
+                    class="rounded-full"
                   /> toastify.tk
                 </h2>
                 <p>My personal website that features all my socials.</p>
@@ -209,6 +232,7 @@ import Youtube from "../components/youtube.astro";
             target="_blank"
             rel="noopener noreferrer"
             title="Go to GitHub"
+            aria-label="Go to GitHub"
             class="btn-ghost btn-circle btn"
             href="https://github.com/ToastifyDev"
           >
@@ -218,6 +242,7 @@ import Youtube from "../components/youtube.astro";
             target="_blank"
             rel="noopener noreferrer"
             title="Go to YouTube"
+            aria-label="Go to YouTube"
             class="btn-ghost btn-circle btn"
             href="https://youtube.com/@ToastedDev"
           >
@@ -227,6 +252,7 @@ import Youtube from "../components/youtube.astro";
             target="_blank"
             rel="noopener noreferrer"
             title="View Source"
+            aria-label="View Source"
             class="btn-ghost btn-circle btn"
             href="https://github.com/ToastifyDev/portfolio"
           >
